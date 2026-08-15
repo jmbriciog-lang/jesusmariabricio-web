@@ -426,7 +426,7 @@ h1, h2, h3, p { margin: 0; }
    ------------------------------------------------------------------------- */
 .servicios__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 .card {
@@ -482,17 +482,7 @@ h1, h2, h3, p { margin: 0; }
 .proceso__text { color: var(--text-dim); }
 .proceso__text strong { color: var(--text); font-weight: 600; }
 
-.como-trabajo__callout {
-  background: var(--accent-dim);
-  border-left: 2px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 1.2rem 1.5rem;
-  color: var(--text);
-  margin-bottom: 3rem;
-}
-.como-trabajo__callout strong { color: var(--accent); }
-
-.como-trabajo__estandares { margin-bottom: 3rem; }
+.como-trabajo__estandares { margin-bottom: 1rem; }
 .como-trabajo__estandares-label {
   display: block;
   font-family: var(--font-mono);
@@ -502,25 +492,6 @@ h1, h2, h3, p { margin: 0; }
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
 }
-
-.como-trabajo__doble {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
-.como-trabajo__doble > div {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  background: var(--bg-elevated);
-  box-shadow: var(--shadow-soft);
-}
-.como-trabajo__doble h3 { font-family: var(--font-display); font-size: 1rem; margin-bottom: 0.5rem; }
-.como-trabajo__doble p { color: var(--text-dim); font-size: 0.9rem; }
-
-.como-trabajo__remediacion { color: var(--text-dim); max-width: 720px; }
-.como-trabajo__remediacion strong { color: var(--text); }
 
 /* -------------------------------------------------------------------------
    Muestra — banda de acento a todo el ancho
@@ -633,7 +604,6 @@ h1, h2, h3, p { margin: 0; }
   .hero__text { text-align: left; }
 
   .servicios__grid { grid-template-columns: 1fr; }
-  .como-trabajo__doble { grid-template-columns: 1fr; }
   .certis { grid-template-columns: 1fr; gap: 1.5rem; }
   .contacto__details { grid-template-columns: 1fr; gap: 1.2rem; }
 

@@ -2,53 +2,60 @@ servicios:
   - titulo: "Análisis de vulnerabilidades"
     icono: "scan"
     descripcion: >
-      Barrido de web y/o infraestructura (externo o interno) con validación manual de
-      cada hallazgo —cero falsos positivos—, clasificación por CVSS 3.1 e impacto real
-      de negocio.
-    entrega: "informe ejecutivo + técnico con remediación priorizada."
-    orientativo: "~5 días de ejecución."
+      Reviso tu web o tu red y te digo qué es explotable de verdad —no una lista de
+      escáner llena de ruido—, priorizado por el riesgo real para tu negocio.
+    entrega: "informe claro con el plan de corrección, ordenado por lo que más te protege."
+    orientativo: ""
   - titulo: "Test de intrusión (pentesting)"
     icono: "exploit"
     descripcion: >
-      Explotación controlada y ciclo completo: reconocimiento, enumeración, explotación
-      y post-explotación, con evidencia paso a paso y cadena de custodia. Enfoque fuerte
-      en infraestructura interna y Active Directory.
-    entrega: "informe ejecutivo + técnico con cadena de ataque reproducible y plan de remediación priorizado."
-    orientativo: "~2 semanas."
+      Voy un paso más allá: exploto de forma controlada para demostrar hasta dónde
+      llegaría un atacante real, paso a paso. Mi terreno fuerte: infraestructura interna
+      y Active Directory.
+    entrega: "informe con la cadena de ataque reproducible y cómo cerrarla."
+    orientativo: ""
   - titulo: "Retest de remediación"
     icono: "shield"
     descripcion: >
-      Verifico que las correcciones aplicadas cierran de verdad los hallazgos y emito un
-      informe de cierre. Recomendado como paso recurrente tras cualquier auditoría.
+      Compruebo que lo que arreglaste queda cerrado de verdad y te lo dejo por escrito.
+      El cierre lógico de cualquier auditoría.
+    entrega: ""
+    orientativo: ""
+  - titulo: "Cumplimiento y auditoría — la parte técnica"
+    icono: "compliance"
+    descripcion: >
+      ¿Vas hacia una ISO 27001, el ENS o NIS2? Esas normas te exigen probar tu seguridad
+      de forma técnica, no solo sobre papel. Ahí encajan mi análisis de vulnerabilidades y
+      mi pentesting: te doy la evidencia que pide el auditor y te la documento. La
+      consultoría y la certificación las lleva tu consultor de cumplimiento; yo pongo la
+      prueba técnica.
     entrega: ""
     orientativo: ""
 
 proceso:
-  - "**Pre-engagement** — alcance y reglas de compromiso cerradas por escrito antes de tocar nada."
-  - "**Reconocimiento** — descubrimiento de servicios y superficie de ataque."
-  - "**Análisis y modelado de amenaza** — priorizo la vía de ataque más barata para un atacante real."
-  - "**Explotación controlada** — sin acciones destructivas, con regla de parada."
-  - "**Post-explotación** — hasta donde marque el alcance, documentando cada paso."
-  - "**Reporting** — capa ejecutiva + capa técnica."
+  - "Alcance y presupuesto cerrados y personalizados antes de empezar. Pagas por lo acordado; sin sorpresas a mitad de camino."
+  - "Metodología reconocida (PTES, OWASP) y validación manual: solo te reporto lo que es explotable de verdad, con su prueba — no la salida de un escáner."
+  - "Cada hallazgo, con su riesgo y su solución, priorizado por lo que de verdad te protege."
+  - "Siempre dos lecturas del mismo informe: una ejecutiva para dirección y una técnica para tu equipo."
 
 estandares:
   - "PTES"
   - "OWASP"
-  - "CVSS 3.1 (vector completo, no solo el número)"
-  - "CWE"
+  - "CVSS"
   - "MITRE ATT&CK"
-  - "remediación mapeada a ENS y CIS Controls"
+  - "ENS"
+  - "CIS"
 
 trayectoria:
   - periodo: "2026–actualidad"
     rol: "Freelance — auditorías de seguridad ofensiva"
-    detalle: "análisis de vulnerabilidades y pentesting para empresas y consultoras."
-  - periodo: "oct 2025–abr 2026"
-    rol: "Pentester en 0invader Cybersecurity"
-    detalle: "tests de intrusión sobre infraestructura y web; compromiso de red interna y Active Directory; informes mapeados a MITRE ATT&CK y CWE."
+    detalle: "para empresas y consultoras."
+  - periodo: ""
+    rol: "Pentester por cuenta ajena en una empresa de ciberseguridad"
+    detalle: "pentesting de infraestructura y web, compromiso de red interna y Active Directory, con informes mapeados a MITRE ATT&CK y CWE."
   - periodo: ""
     rol: "~2 años como técnico de redes"
-    detalle: "LAN/WAN, FTTH/WiMAX, switching y routing, antes de dar el salto a ofensiva."
+    detalle: "antes de dar el salto a la ofensiva."
 
 herramientas:
   - "Burp Suite"
@@ -67,4 +74,4 @@ certificaciones:
     - "eCPPT (INE)"
     - "eWPTX (INE)"
   formacion:
-    - "Grado Superior en ASIR (Sistemas y Redes)"
+    - "Grado Superior en ASIR"
