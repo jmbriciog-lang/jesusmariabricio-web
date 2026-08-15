@@ -9,10 +9,6 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
-  {{ $hero := resources.Get "js/hero-bg.js" }}
-  {{ $heroMin := $hero | js.Build (dict "minify" true) | fingerprint }}
-  <script src="{{ $heroMin.RelPermalink }}" integrity="{{ $heroMin.Data.Integrity }}" defer></script>
-
   {{ $site := resources.Get "js/site.js" }}
   {{ $siteMin := $site | js.Build (dict "minify" true) | fingerprint }}
   <script src="{{ $siteMin.RelPermalink }}" integrity="{{ $siteMin.Data.Integrity }}" defer></script>
