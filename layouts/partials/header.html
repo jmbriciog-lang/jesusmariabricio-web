@@ -1,11 +1,14 @@
 <header class="site-nav">
   <nav class="site-nav__inner">
-    <a href="#inicio" class="site-nav__brand">JMB<span class="accent">_</span></a>
-    <input type="checkbox" id="nav-toggle" class="site-nav__toggle-input">
-    <label for="nav-toggle" class="site-nav__toggle" aria-label="Abrir menú">
+    <a href="#inicio" class="site-nav__brand">
+      <img src="/img/jmb.jpg" alt="JMB" width="40" height="40" class="site-nav__logo">
+    </a>
+
+    <button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav-links" aria-label="Abrir menú">
       <span></span><span></span><span></span>
-    </label>
-    <ul class="site-nav__links">
+    </button>
+
+    <ul class="site-nav__links" id="site-nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#como-trabajo">Cómo trabajo</a></li>

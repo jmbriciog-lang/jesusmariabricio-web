@@ -1,20 +1,21 @@
 <section id="servicios" class="servicios">
   <div class="section__inner">
-    <p class="kicker">Qué hago</p>
-    <h2 class="section__title">Servicios</h2>
-    <p class="section__intro">Tres servicios, un mismo estándar de rigor y evidencia.</p>
+    <p class="kicker reveal">Qué hago</p>
+    <h2 class="section__title reveal">Servicios</h2>
+    <p class="section__intro reveal">Tres servicios, un mismo estándar de rigor y evidencia.</p>
 
     <div class="servicios__grid">
-      {{ range site.Data.site.servicios }}
-      <article class="card">
-        <h3 class="card__title">{{ .titulo }}</h3>
-        <p class="card__desc">{{ .descripcion }}</p>
-        {{ if .entrega }}<p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ .entrega }}</p>{{ end }}
-        {{ if .orientativo }}<p class="card__meta"><span class="card__meta-label">Orientativo:</span> {{ .orientativo }}</p>{{ end }}
+      {{ range $i, $s := site.Data.site.servicios }}
+      <article class="card reveal" style="transition-delay: {{ mul $i 80 }}ms">
+        {{ partial "icon.html" $s.icono }}
+        <h3 class="card__title">{{ $s.titulo }}</h3>
+        <p class="card__desc">{{ $s.descripcion }}</p>
+        {{ if $s.entrega }}<p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ $s.entrega }}</p>{{ end }}
+        {{ if $s.orientativo }}<p class="card__meta"><span class="card__meta-label">Orientativo:</span> {{ $s.orientativo }}</p>{{ end }}
       </article>
       {{ end }}
     </div>
 
-    <p class="section__footnote">El precio se ajusta al alcance. Cuéntame tu inventario —nº de hosts y/o webs, si hay dominio Active Directory, y si el test es externo o interno— y te paso una propuesta cerrada.</p>
+    <p class="section__footnote reveal">El precio se ajusta al alcance. Cuéntame tu inventario —nº de hosts y/o webs, si hay dominio Active Directory, y si el test es externo o interno— y te paso una propuesta cerrada.</p>
   </div>
 </section>

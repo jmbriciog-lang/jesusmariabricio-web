@@ -1,36 +1,36 @@
-<section id="sobre-mi" class="sobre-mi">
+<section id="sobre-mi" class="sobre-mi section--light">
   <div class="section__inner">
-    <p class="kicker">Quién soy</p>
-    <h2 class="section__title">Sobre mí</h2>
+    <p class="kicker reveal">Quién soy</p>
+    <h2 class="section__title reveal">Sobre mí</h2>
 
-    <p class="sobre-mi__bio">Soy Jesús María Bricio, pentester centrado en seguridad ofensiva. Vengo de dos años en redes e infraestructura, una base que me da ventaja auditando entornos internos y Active Directory —mi terreno más fuerte— además de aplicaciones web. Trabajo 100% en remoto, en español, sobre un principio simple: no vendo lo que no domino, y lo que entrego lo demuestro con evidencia.</p>
+    <p class="sobre-mi__bio reveal">Soy Jesús María Bricio, pentester centrado en seguridad ofensiva. Vengo de dos años en redes e infraestructura, una base que me da ventaja auditando entornos internos y Active Directory —mi terreno más fuerte— además de aplicaciones web. Trabajo 100% en remoto, en español, sobre un principio simple: no vendo lo que no domino, y lo que entrego lo demuestro con evidencia.</p>
 
     <h3 class="sobre-mi__subhead">Trayectoria</h3>
     <ul class="trayectoria">
-      {{ range site.Data.site.trayectoria }}
-      <li class="trayectoria__item">
-        {{ if .periodo }}<span class="trayectoria__periodo">{{ .periodo }}</span>{{ end }}
-        <span class="trayectoria__rol"><strong>{{ .rol }}</strong>{{ if .detalle }}: {{ .detalle }}{{ end }}</span>
+      {{ range $i, $t := site.Data.site.trayectoria }}
+      <li class="trayectoria__item reveal" style="transition-delay: {{ mul $i 60 }}ms">
+        {{ if $t.periodo }}<span class="trayectoria__periodo">{{ $t.periodo }}</span>{{ end }}
+        <span class="trayectoria__rol"><strong>{{ $t.rol }}</strong>{{ if $t.detalle }}: {{ $t.detalle }}{{ end }}</span>
       </li>
       {{ end }}
     </ul>
 
     <h3 class="sobre-mi__subhead">Herramientas</h3>
-    <ul class="pill-list">
+    <ul class="pill-list reveal">
       {{ range site.Data.site.herramientas }}<li class="pill pill--mono">{{ . }}</li>{{ end }}
     </ul>
 
     <h3 class="sobre-mi__subhead">Certificaciones</h3>
     <div class="certis">
-      <div class="certis__col">
+      <div class="certis__col reveal">
         <span class="certis__label">Obtenidas</span>
         <ul>{{ range site.Data.site.certificaciones.obtenidas }}<li>{{ . }}</li>{{ end }}</ul>
       </div>
-      <div class="certis__col">
+      <div class="certis__col reveal" style="transition-delay: 60ms">
         <span class="certis__label">En curso</span>
         <ul>{{ range site.Data.site.certificaciones.en_curso }}<li>{{ . }}</li>{{ end }}</ul>
       </div>
-      <div class="certis__col">
+      <div class="certis__col reveal" style="transition-delay: 120ms">
         <span class="certis__label">Formación</span>
         <ul>{{ range site.Data.site.certificaciones.formacion }}<li>{{ . }}</li>{{ end }}</ul>
       </div>

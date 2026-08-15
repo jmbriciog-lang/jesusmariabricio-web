@@ -1,5 +1,6 @@
 servicios:
   - titulo: "Análisis de vulnerabilidades"
+    icono: "scan"
     descripcion: >
       Barrido de web y/o infraestructura (externo o interno) con validación manual de
       cada hallazgo —cero falsos positivos—, clasificación por CVSS 3.1 e impacto real
@@ -7,6 +8,7 @@ servicios:
     entrega: "informe ejecutivo + técnico con remediación priorizada."
     orientativo: "~5 días de ejecución."
   - titulo: "Test de intrusión (pentesting)"
+    icono: "exploit"
     descripcion: >
       Explotación controlada y ciclo completo: reconocimiento, enumeración, explotación
       y post-explotación, con evidencia paso a paso y cadena de custodia. Enfoque fuerte
@@ -14,6 +16,7 @@ servicios:
     entrega: "informe ejecutivo + técnico con cadena de ataque reproducible y plan de remediación priorizado."
     orientativo: "~2 semanas."
   - titulo: "Retest de remediación"
+    icono: "shield"
     descripcion: >
       Verifico que las correcciones aplicadas cierran de verdad los hallazgos y emito un
       informe de cierre. Recomendado como paso recurrente tras cualquier auditoría.

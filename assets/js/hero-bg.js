@@ -1,6 +1,6 @@
-// Fondo animado del hero: red de nodos finos con deriva lenta.
+// Fondo animado del hero: red de nodos con deriva lenta.
 // Sube o baja este único número para ajustar la intensidad de toda la animación.
-const INTENSITY = 0.45; // 0 = apagado · 1 = máximo
+const INTENSITY = 0.7; // 0 = apagado · 1 = máximo
 
 (function () {
   const canvas = document.getElementById("hero-canvas");
@@ -9,13 +9,14 @@ const INTENSITY = 0.45; // 0 = apagado · 1 = máximo
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const ctx = canvas.getContext("2d");
 
-  const DENSITY = 9000; // px² por nodo — más alto = menos nodos
-  const MAX_SPEED = 0.12 * INTENSITY; // px/frame
-  const LINK_DIST = 130;
-  const NODE_OPACITY = 0.5 * INTENSITY;
-  const LINE_OPACITY = 0.22 * INTENSITY;
-  const NODE_COLOR = "200, 205, 214";
-  const LINE_COLOR = "160, 40, 60";
+  const DENSITY = 7500; // px² por nodo — más alto = menos nodos
+  const MAX_SPEED = 0.14 * INTENSITY; // px/frame
+  const LINK_DIST = 150;
+  const NODE_RADIUS = 2.1;
+  const NODE_OPACITY = 0.75 * INTENSITY;
+  const LINE_OPACITY = 0.38 * INTENSITY;
+  const NODE_COLOR = "222, 228, 240";
+  const LINE_COLOR = "232, 53, 43";
 
   let width = 0;
   let height = 0;
@@ -77,7 +78,7 @@ const INTENSITY = 0.45; // 0 = apagado · 1 = máximo
     ctx.fillStyle = `rgba(${NODE_COLOR}, ${NODE_OPACITY})`;
     for (const n of nodes) {
       ctx.beginPath();
-      ctx.arc(n.x, n.y, 1.4, 0, Math.PI * 2);
+      ctx.arc(n.x, n.y, NODE_RADIUS, 0, Math.PI * 2);
       ctx.fill();
     }
 
