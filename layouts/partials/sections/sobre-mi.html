@@ -3,8 +3,8 @@
     <p class="kicker reveal">Quién soy</p>
     <h2 class="section__title reveal">Sobre mí</h2>
 
-    <p class="sobre-mi__bio reveal">Soy Jesús María Bricio. Me dedico a entrar —con permiso— en redes y aplicaciones para encontrar los fallos antes que quien no debería. Mi terreno fuerte es la infraestructura y Active Directory: esos entornos internos donde una sola credencial mal configurada puede acabar en el control de todo el dominio.</p>
-    <p class="sobre-mi__bio reveal">Vengo de dos años en redes e infraestructura, y esa base se nota: entiendo cómo está montado lo que audito, no solo cómo romperlo. Trabajo 100% en remoto, en español, con un principio que no negocio: no vendo lo que no domino, y lo que entrego lo demuestro con evidencia.</p>
+    <p class="sobre-mi__bio reveal">Soy Jesús María Bricio. Me dedico a entrar —con permiso— en redes y aplicaciones para encontrar los fallos antes que quien no debería. Mi terreno son los tests de vulnerabilidades y el pentesting de infraestructuras y páginas web; me muevo especialmente bien en entornos internos y Active Directory, donde una sola credencial mal configurada puede acabar en el control de todo el dominio.</p>
+    <p class="sobre-mi__bio reveal">Vengo de dos años y medio en redes e infraestructura, y esa base se nota: entiendo cómo está montado lo que audito, no solo cómo romperlo. Trabajo 100% en remoto, en español, con un principio que no negocio: no vendo lo que no domino, y lo que entrego lo demuestro con evidencia.</p>
 
     <h3 class="sobre-mi__subhead">Trayectoria</h3>
     <ul class="trayectoria">
@@ -16,22 +16,21 @@
       {{ end }}
     </ul>
 
-    <h3 class="sobre-mi__subhead">Herramientas</h3>
-    <ul class="pill-list reveal">
-      {{ range site.Data.site.herramientas }}<li class="pill pill--mono">{{ . }}</li>{{ end }}
-    </ul>
-
-    <h3 class="sobre-mi__subhead">Certificaciones</h3>
+    <h3 class="sobre-mi__subhead">Certificaciones y cursos</h3>
     <div class="certis">
       <div class="certis__col reveal">
         <span class="certis__label">Obtenidas</span>
         <ul>{{ range site.Data.site.certificaciones.obtenidas }}<li>{{ . }}</li>{{ end }}</ul>
       </div>
       <div class="certis__col reveal" style="transition-delay: 60ms">
-        <span class="certis__label">En curso</span>
-        <ul>{{ range site.Data.site.certificaciones.en_curso }}<li>{{ . }}</li>{{ end }}</ul>
+        <span class="certis__label">Próximamente</span>
+        <ul>{{ range site.Data.site.certificaciones.proximamente }}<li>{{ . }}</li>{{ end }}</ul>
       </div>
       <div class="certis__col reveal" style="transition-delay: 120ms">
+        <span class="certis__label">En estudio</span>
+        <ul>{{ range site.Data.site.certificaciones.en_estudio }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="certis__col reveal" style="transition-delay: 180ms">
         <span class="certis__label">Formación</span>
         <ul>{{ range site.Data.site.certificaciones.formacion }}<li>{{ . }}</li>{{ end }}</ul>
       </div>

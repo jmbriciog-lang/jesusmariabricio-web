@@ -2,16 +2,17 @@ servicios:
   - titulo: "Análisis de vulnerabilidades"
     icono: "scan"
     descripcion: >
-      Reviso tu web o tu red y te digo qué es explotable de verdad —no una lista de
-      escáner llena de ruido—, priorizado por el riesgo real para tu negocio.
+      Reviso tu infraestructura o tus aplicaciones web y te digo qué es explotable de
+      verdad —no una lista de escáner llena de ruido—, priorizado por el riesgo real
+      para tu negocio.
     entrega: "informe claro con el plan de corrección, ordenado por lo que más te protege."
     orientativo: ""
   - titulo: "Test de intrusión (pentesting)"
     icono: "exploit"
     descripcion: >
       Voy un paso más allá: exploto de forma controlada para demostrar hasta dónde
-      llegaría un atacante real, paso a paso. Mi terreno fuerte: infraestructura interna
-      y Active Directory.
+      llegaría un atacante real, paso a paso. Sobre infraestructura interna, Active
+      Directory y aplicaciones web.
     entrega: "informe con la cadena de ataque reproducible y cómo cerrarla."
     orientativo: ""
   - titulo: "Retest de remediación"
@@ -54,24 +55,17 @@ trayectoria:
     rol: "Pentester por cuenta ajena en una empresa de ciberseguridad"
     detalle: "pentesting de infraestructura y web, compromiso de red interna y Active Directory, con informes mapeados a MITRE ATT&CK y CWE."
   - periodo: ""
-    rol: "~2 años como técnico de redes"
+    rol: "Dos años y medio como técnico de redes"
     detalle: "antes de dar el salto a la ofensiva."
-
-herramientas:
-  - "Burp Suite"
-  - "Nmap"
-  - "Metasploit"
-  - "Impacket"
-  - "NetExec"
-  - "Nessus"
 
 certificaciones:
   obtenidas:
     - "eJPT (INE)"
     - "CCNA (Cisco)"
-  en_curso:
-    - "BSCP (PortSwigger)"
+  proximamente:
     - "eCPPT (INE)"
     - "eWPTX (INE)"
+  en_estudio:
+    - "BSCP (PortSwigger)"
   formacion:
-    - "Grado Superior en ASIR"
+    - "Grado Superior en ASIR (Sistemas y Redes)"

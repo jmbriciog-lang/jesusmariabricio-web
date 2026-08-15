@@ -542,7 +542,7 @@ h1, h2, h3, p { margin: 0; }
 .trayectoria__rol { color: var(--text-dim); font-size: 0.95rem; }
 .trayectoria__rol strong { color: var(--text); }
 
-.certis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.certis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .certis__label {
   display: block;
   font-family: var(--font-mono);
