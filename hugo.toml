@@ -1,0 +1,19 @@
+baseURL = "https://jesusmariabricio.com/"
+locale = "es-ES"
+title = "Jesús María Bricio · Pentester"
+
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Pentesting de infraestructura, Active Directory y aplicaciones web. Validación manual de cada hallazgo, informe ejecutivo y técnico."
+  author = "Jesús María Bricio"
+  email = "jm.briciog@gmail.com"
+  linkedin = "https://www.linkedin.com/in/jes%C3%BAs-mar%C3%ADa-bricio-46198b272/"
+  location = "Alicante (España) · 100% remoto"
+
+[minify]
+  minifyOutput = true
+
+[build]
+  writeStats = false

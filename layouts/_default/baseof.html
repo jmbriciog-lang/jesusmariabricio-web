@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ $hero := resources.Get "js/hero-bg.js" }}
+  {{ $heroMin := $hero | js.Build (dict "minify" true) | fingerprint }}
+  <script src="{{ $heroMin.RelPermalink }}" integrity="{{ $heroMin.Data.Integrity }}" defer></script>
+</body>
+</html>

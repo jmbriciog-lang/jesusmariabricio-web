@@ -1,0 +1,38 @@
+<section id="como-trabajo" class="como-trabajo">
+  <div class="section__inner">
+    <p class="kicker">Metodología</p>
+    <h2 class="section__title">Cómo trabajo</h2>
+    <p class="section__intro">La metodología no se cita: se demuestra en cada informe.</p>
+
+    <ol class="proceso">
+      {{ range $i, $paso := site.Data.site.proceso }}
+      <li class="proceso__item">
+        <span class="proceso__num">{{ printf "%02d" (add $i 1) }}</span>
+        <span class="proceso__text">{{ $paso | markdownify }}</span>
+      </li>
+      {{ end }}
+    </ol>
+
+    <p class="como-trabajo__callout"><strong>Validación manual:</strong> cada hallazgo se valida a mano. No entrego salida de escáner: entrego lo que es explotable de verdad, con su prueba.</p>
+
+    <div class="como-trabajo__estandares">
+      <span class="como-trabajo__estandares-label">Estándares y marcos</span>
+      <ul class="pill-list">
+        {{ range site.Data.site.estandares }}<li class="pill">{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+
+    <div class="como-trabajo__doble">
+      <div>
+        <h3>Ejecutiva</h3>
+        <p>Riesgo de negocio en lenguaje claro, para dirección.</p>
+      </div>
+      <div>
+        <h3>Técnica</h3>
+        <p>Evidencia, comandos y cadena de ataque reproducible, para el equipo.</p>
+      </div>
+    </div>
+
+    <p class="como-trabajo__remediacion"><strong>Remediación priorizada:</strong> no listo problemas sueltos; priorizo por el eslabón más barato de romper de la cadena de ataque, con esfuerzo/impacto y referencia a ENS/CIS.</p>
+  </div>
+</section>

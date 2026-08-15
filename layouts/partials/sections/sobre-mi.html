@@ -1,0 +1,39 @@
+<section id="sobre-mi" class="sobre-mi">
+  <div class="section__inner">
+    <p class="kicker">Quién soy</p>
+    <h2 class="section__title">Sobre mí</h2>
+
+    <p class="sobre-mi__bio">Soy Jesús María Bricio, pentester centrado en seguridad ofensiva. Vengo de dos años en redes e infraestructura, una base que me da ventaja auditando entornos internos y Active Directory —mi terreno más fuerte— además de aplicaciones web. Trabajo 100% en remoto, en español, sobre un principio simple: no vendo lo que no domino, y lo que entrego lo demuestro con evidencia.</p>
+
+    <h3 class="sobre-mi__subhead">Trayectoria</h3>
+    <ul class="trayectoria">
+      {{ range site.Data.site.trayectoria }}
+      <li class="trayectoria__item">
+        {{ if .periodo }}<span class="trayectoria__periodo">{{ .periodo }}</span>{{ end }}
+        <span class="trayectoria__rol"><strong>{{ .rol }}</strong>{{ if .detalle }}: {{ .detalle }}{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+
+    <h3 class="sobre-mi__subhead">Herramientas</h3>
+    <ul class="pill-list">
+      {{ range site.Data.site.herramientas }}<li class="pill pill--mono">{{ . }}</li>{{ end }}
+    </ul>
+
+    <h3 class="sobre-mi__subhead">Certificaciones</h3>
+    <div class="certis">
+      <div class="certis__col">
+        <span class="certis__label">Obtenidas</span>
+        <ul>{{ range site.Data.site.certificaciones.obtenidas }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="certis__col">
+        <span class="certis__label">En curso</span>
+        <ul>{{ range site.Data.site.certificaciones.en_curso }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      <div class="certis__col">
+        <span class="certis__label">Formación</span>
+        <ul>{{ range site.Data.site.certificaciones.formacion }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+    </div>
+  </div>
+</section>

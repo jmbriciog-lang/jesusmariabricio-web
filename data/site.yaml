@@ -1,0 +1,67 @@
+servicios:
+  - titulo: "Análisis de vulnerabilidades"
+    descripcion: >
+      Barrido de web y/o infraestructura (externo o interno) con validación manual de
+      cada hallazgo —cero falsos positivos—, clasificación por CVSS 3.1 e impacto real
+      de negocio.
+    entrega: "informe ejecutivo + técnico con remediación priorizada."
+    orientativo: "~5 días de ejecución."
+  - titulo: "Test de intrusión (pentesting)"
+    descripcion: >
+      Explotación controlada y ciclo completo: reconocimiento, enumeración, explotación
+      y post-explotación, con evidencia paso a paso y cadena de custodia. Enfoque fuerte
+      en infraestructura interna y Active Directory.
+    entrega: "informe ejecutivo + técnico con cadena de ataque reproducible y plan de remediación priorizado."
+    orientativo: "~2 semanas."
+  - titulo: "Retest de remediación"
+    descripcion: >
+      Verifico que las correcciones aplicadas cierran de verdad los hallazgos y emito un
+      informe de cierre. Recomendado como paso recurrente tras cualquier auditoría.
+    entrega: ""
+    orientativo: ""
+
+proceso:
+  - "**Pre-engagement** — alcance y reglas de compromiso cerradas por escrito antes de tocar nada."
+  - "**Reconocimiento** — descubrimiento de servicios y superficie de ataque."
+  - "**Análisis y modelado de amenaza** — priorizo la vía de ataque más barata para un atacante real."
+  - "**Explotación controlada** — sin acciones destructivas, con regla de parada."
+  - "**Post-explotación** — hasta donde marque el alcance, documentando cada paso."
+  - "**Reporting** — capa ejecutiva + capa técnica."
+
+estandares:
+  - "PTES"
+  - "OWASP"
+  - "CVSS 3.1 (vector completo, no solo el número)"
+  - "CWE"
+  - "MITRE ATT&CK"
+  - "remediación mapeada a ENS y CIS Controls"
+
+trayectoria:
+  - periodo: "2026–actualidad"
+    rol: "Freelance — auditorías de seguridad ofensiva"
+    detalle: "análisis de vulnerabilidades y pentesting para empresas y consultoras."
+  - periodo: "oct 2025–abr 2026"
+    rol: "Pentester en 0invader Cybersecurity"
+    detalle: "tests de intrusión sobre infraestructura y web; compromiso de red interna y Active Directory; informes mapeados a MITRE ATT&CK y CWE."
+  - periodo: ""
+    rol: "~2 años como técnico de redes"
+    detalle: "LAN/WAN, FTTH/WiMAX, switching y routing, antes de dar el salto a ofensiva."
+
+herramientas:
+  - "Burp Suite"
+  - "Nmap"
+  - "Metasploit"
+  - "Impacket"
+  - "NetExec"
+  - "Nessus"
+
+certificaciones:
+  obtenidas:
+    - "eJPT (INE)"
+    - "CCNA (Cisco)"
+  en_curso:
+    - "BSCP (PortSwigger)"
+    - "eCPPT (INE)"
+    - "eWPTX (INE)"
+  formacion:
+    - "Grado Superior en ASIR (Sistemas y Redes)"
