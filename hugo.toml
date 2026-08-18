@@ -1,16 +1,21 @@
 baseURL = "https://jesusmariabricio.com/"
 locale = "es-ES"
-title = "Jesús María Bricio · Pentester"
+title = "Jesús María Bricio · Pentester Freelance"
 
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 
+[outputs]
+  home = ["HTML"]
+
 [params]
-  description = "Pentesting de infraestructura, Active Directory y aplicaciones web. Validación manual de cada hallazgo, informe ejecutivo y técnico."
+  description = "Pentester freelance: test de intrusión, análisis de vulnerabilidades y hacking ético. Evidencia técnica para ISO 27001, ENS y NIS2. 100% remoto."
   author = "Jesús María Bricio"
   email = "jm.briciog@gmail.com"
   linkedin = "https://www.linkedin.com/in/jes%C3%BAs-mar%C3%ADa-bricio-46198b272/"
   location = "Alicante (España) · 100% remoto"
+  themeColor = "#0C6E76"
+  googleSiteVerification = ""
 
 [minify]
   minifyOutput = true

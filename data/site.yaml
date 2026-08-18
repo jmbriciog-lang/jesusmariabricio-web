@@ -25,11 +25,11 @@ servicios:
   - titulo: "Cumplimiento y auditoría — la parte técnica"
     icono: "compliance"
     descripcion: >
-      ¿Vas hacia una ISO 27001, el ENS o NIS2? Esas normas te exigen probar tu seguridad
-      de forma técnica, no solo sobre papel. Ahí encajan mi análisis de vulnerabilidades y
-      mi pentesting: te doy la evidencia que pide el auditor y te la documento. La
-      consultoría y la certificación las lleva tu consultor de cumplimiento; yo pongo la
-      prueba técnica.
+      ¿Vas hacia una ISO 27001, el ENS o NIS2? Esas normas exigen probar tu seguridad de
+      forma técnica, no solo sobre papel. Ahí encaja un pentest para ISO 27001, un test
+      de intrusión para el ENS o un análisis de vulnerabilidades para NIS2: te doy la
+      evidencia técnica que pide el auditor, documentada. La consultoría y la
+      certificación las lleva tu consultor de cumplimiento; yo pongo la prueba técnica.
     entrega: ""
     orientativo: ""
 

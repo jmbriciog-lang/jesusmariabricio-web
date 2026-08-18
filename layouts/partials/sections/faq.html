@@ -1,0 +1,16 @@
+<section id="faq" class="faq section--tint">
+  <div class="section__inner section__inner--narrow">
+    <p class="kicker reveal">Preguntas frecuentes</p>
+    <h2 class="section__title reveal">FAQ</h2>
+    <p class="section__intro reveal">Lo que más me preguntáis antes de empezar un pentest o un análisis de vulnerabilidades.</p>
+
+    <div class="faq__list">
+      {{ range $i, $item := site.Data.faq }}
+      <details class="faq__item reveal" style="transition-delay: {{ mul $i 50 }}ms">
+        <summary class="faq__question">{{ $item.pregunta }}</summary>
+        <p class="faq__answer">{{ $item.respuesta }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>

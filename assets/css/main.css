@@ -534,7 +534,20 @@ h1, h2, h3, p { margin: 0; }
 /* -------------------------------------------------------------------------
    Sobre mí
    ------------------------------------------------------------------------- */
-.sobre-mi__bio { color: var(--text-dim); font-size: 1.05rem; max-width: 720px; margin-bottom: 3rem; }
+.sobre-mi__bio { color: var(--text-dim); font-size: 1.05rem; max-width: 720px; margin-bottom: 1.2rem; }
+.sobre-mi__bio + .sobre-mi__bio { margin-bottom: 0.8rem; }
+.sobre-mi__linkedin {
+  font-size: 0.9rem;
+  color: var(--text-faint);
+  margin-bottom: 3rem;
+}
+.sobre-mi__linkedin a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+.sobre-mi__linkedin a:hover { color: var(--accent-deep); }
 .sobre-mi__subhead {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -601,6 +614,75 @@ h1, h2, h3, p { margin: 0; }
 }
 .contacto__details a { transition: color var(--transition-fast); }
 .contacto__details a:hover { color: var(--accent); }
+
+/* -------------------------------------------------------------------------
+   FAQ
+   ------------------------------------------------------------------------- */
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.faq__item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.faq__item:hover { border-color: var(--accent-line); }
+.faq__item[open] { box-shadow: var(--shadow-soft-hover); }
+.faq__question {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.faq__question::-webkit-details-marker { display: none; }
+.faq__question::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition: transform var(--transition-fast);
+}
+.faq__item[open] .faq__question::after { content: "−"; }
+.faq__answer {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* -------------------------------------------------------------------------
+   404
+   ------------------------------------------------------------------------- */
+.error-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+}
+.error-page__text {
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
 
 /* -------------------------------------------------------------------------
    Footer

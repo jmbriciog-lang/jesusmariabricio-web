@@ -1,0 +1,75 @@
+{{ $person := dict
+  "@type" "Person"
+  "@id" (print .Site.BaseURL "#person")
+  "name" "Jesús María Bricio"
+  "jobTitle" "Pentester"
+  "description" .Site.Params.description
+  "url" .Site.BaseURL
+  "image" (print .Site.BaseURL "img/bricio.jpg")
+  "email" (print "mailto:" .Site.Params.email)
+  "sameAs" (slice .Site.Params.linkedin)
+  "knowsAbout" (slice
+    "Pentesting"
+    "Test de intrusión"
+    "Análisis de vulnerabilidades"
+    "Seguridad de Active Directory"
+    "Hacking ético"
+    "OWASP"
+    "PTES"
+    "MITRE ATT&CK"
+    "Evidencia técnica para ISO 27001"
+    "Test de intrusión para el ENS"
+    "NIS2"
+  )
+  "hasCredential" (slice
+    (dict
+      "@type" "EducationalOccupationalCredential"
+      "credentialCategory" "certification"
+      "name" "eJPT"
+      "recognizedBy" (dict "@type" "Organization" "name" "INE")
+    )
+    (dict
+      "@type" "EducationalOccupationalCredential"
+      "credentialCategory" "certification"
+      "name" "CCNA"
+      "recognizedBy" (dict "@type" "Organization" "name" "Cisco")
+    )
+  )
+}}
+
+{{ $service := dict
+  "@type" "ProfessionalService"
+  "@id" (print .Site.BaseURL "#service")
+  "name" "Jesús María Bricio — Pentesting y análisis de vulnerabilidades"
+  "url" .Site.BaseURL
+  "image" (print .Site.BaseURL "img/og-banner.png")
+  "areaServed" (slice (dict "@type" "Country" "name" "España") "Remoto")
+  "serviceType" (slice
+    "Análisis de vulnerabilidades"
+    "Test de intrusión (pentesting)"
+    "Retest de remediación"
+    "Evidencia técnica para cumplimiento (ISO 27001, ENS, NIS2)"
+  )
+  "provider" (dict "@id" (print .Site.BaseURL "#person"))
+}}
+
+{{ $graph := slice $person $service }}
+
+{{ if site.Data.faq }}
+  {{ $questions := slice }}
+  {{ range site.Data.faq }}
+    {{ $q := dict
+      "@type" "Question"
+      "name" .pregunta
+      "acceptedAnswer" (dict "@type" "Answer" "text" .respuesta)
+    }}
+    {{ $questions = $questions | append $q }}
+  {{ end }}
+  {{ $faqPage := dict "@type" "FAQPage" "mainEntity" $questions }}
+  {{ $graph = $graph | append $faqPage }}
+{{ end }}
+
+{{ $root := dict "@context" "https://schema.org" "@graph" $graph }}
+<script type="application/ld+json">
+{{ $root | jsonify (dict "indent" "  ") | safeJS }}
+</script>
