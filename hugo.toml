@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   linkedin = "https://www.linkedin.com/in/jes%C3%BAs-mar%C3%ADa-bricio-46198b272/"
   location = "Alicante (España) · 100% remoto"
   themeColor = "#0C6E76"
-  googleSiteVerification = ""
+  googleSiteVerification = "dCWKcQ-G0uTqykjcBjO2SVJZwcPbFfce_E17X-ZksPA"
 
 [minify]
   minifyOutput = true
