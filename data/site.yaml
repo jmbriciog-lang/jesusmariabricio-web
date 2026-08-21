@@ -32,6 +32,15 @@ servicios:
       certificación las lleva tu consultor de cumplimiento; yo pongo la prueba técnica.
     entrega: ""
     orientativo: ""
+  - titulo: "Diseño y desarrollo de páginas web personalizadas y securizadas"
+    icono: "shield"
+    descripcion: >
+      Diseño y desarrollo tu web a medida —nada de plantillas genéricas— y la construyo
+      con la misma cabeza con la que audito: sé cómo se ataca una web, así que sé qué
+      cerrar antes de que sea un problema. La seguridad no se añade al final como
+      checklist de marketing, está en el diseño desde el primer día.
+    entrega: "web a medida, con las medidas de seguridad aplicadas desde el desarrollo."
+    orientativo: ""
 
 proceso:
   - "Alcance y presupuesto cerrados y personalizados antes de empezar. Pagas por lo acordado; sin sorpresas a mitad de camino."
