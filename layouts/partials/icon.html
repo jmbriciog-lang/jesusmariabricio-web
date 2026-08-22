@@ -21,4 +21,15 @@
   <path d="M25 6 V11 H30"></path>
   <path d="M16.5 20 L19 22.5 L25 16.5"></path>
 </svg>
+{{ else if eq . "phishing" }}
+<svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <rect x="5" y="9" width="30" height="21" rx="2"></rect>
+  <path d="M6 11 L20 22 L34 11"></path>
+  <path d="M23 30 C23 33 26.5 34.5 29 33 C31 31.7 30.7 28.8 28 28.7"></path>
+</svg>
+{{ else if eq . "backup" }}
+<svg class="card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M12 28 H27 C30.5 28 33 25.5 33 22.5 C33 19.5 30.7 17.3 27.7 17 C27 12.5 23 9 18.3 9 C13.5 9 9.5 12.6 9 17.2 C6.5 17.8 5 19.9 5 22.5 C5 25.5 7.5 28 11 28 Z"></path>
+  <path d="M19 20 V31 M14.5 27.5 L19 32 L23.5 27.5"></path>
+</svg>
 {{ end }}

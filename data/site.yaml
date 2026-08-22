@@ -1,4 +1,36 @@
-servicios:
+servicios_bloques:
+  ciberseguridad:
+    numero: "1"
+    titulo: "Ciberseguridad"
+    kicker: >
+      ¿Te exigen ISO 27001, ENS o NIS2, o simplemente quieres mejorar tu ciberseguridad y
+      la de tu empresa? Esas pruebas técnicas reales no se hacen solas, y sin un ofensivo
+      en plantilla, esa parte se queda coja. La cubro yo.
+  paginas_web:
+    numero: "2"
+    titulo: "Páginas web que venden"
+    parrafos:
+      - >
+        Tienes un negocio local y o no tienes web, o tienes una que nadie encuentra, o
+        que la gente visita y se va sin llamar. El problema no es "no queda bonita" — el
+        problema es que no está vendiendo nada.
+      - >
+        Cada día que pasa así, tu competencia se lleva al cliente que te tocaba a ti:
+        aparece antes en Google cuando alguien busca lo que tú ofreces, o simplemente
+        tiene una web que convierte esa visita en una llamada y la tuya no. Una web que
+        solo "da buena imagen" no te soluciona eso; te cuesta clientes en silencio, sin
+        que lo veas reflejado en ningún sitio salvo en la caja.
+      - >
+        Yo te diseño y desarrollo una web a medida —nada de plantillas genéricas—
+        pensada para vender, no solo para lucir bien: estrategia SEO real para que te
+        encuentren cuando te buscan, y un diseño visual pensado para convertir esa
+        visita en cliente, no solo para dar buena impresión. Y la construyo con la misma
+        cabeza con la que audito: sé cómo se ataca una web, así que sé qué cerrar antes
+        de que sea un problema — la seguridad está en el diseño desde el primer día, no
+        añadida al final como checklist de marketing.
+    entrega: "web a medida, con estrategia SEO y diseño orientado a conversión, con las medidas de seguridad aplicadas desde el desarrollo. 1.500€, en 1-2 días."
+
+servicios_ciberseguridad:
   - titulo: "Análisis de vulnerabilidades"
     icono: "scan"
     descripcion: >
@@ -14,6 +46,16 @@ servicios:
       llegaría un atacante real, paso a paso. Sobre infraestructura interna, Active
       Directory y aplicaciones web.
     entrega: "informe con la cadena de ataque reproducible y cómo cerrarla."
+    orientativo: ""
+  - titulo: "Test de phishing (ingeniería social)"
+    icono: "phishing"
+    descripcion: >
+      Puedes tener el perímetro blindado y aun así basta un clic en el correo equivocado
+      para que un atacante esté dentro —y ese es precisamente el vector que más se usa
+      para entrar de verdad, no el exploit sofisticado. Simulo campañas de phishing
+      controladas y realistas para medir ese punto ciego antes de que lo aproveche
+      alguien que no te va a avisar.
+    entrega: "informe con la tasa de exposición por equipo/departamento y un plan de concienciación priorizado."
     orientativo: ""
   - titulo: "Retest de remediación"
     icono: "shield"
@@ -32,14 +74,15 @@ servicios:
       certificación las lleva tu consultor de cumplimiento; yo pongo la prueba técnica.
     entrega: ""
     orientativo: ""
-  - titulo: "Diseño y desarrollo de páginas web personalizadas y securizadas"
-    icono: "shield"
+  - titulo: "Copias de seguridad (backup)"
+    icono: "backup"
+    discreto: true
     descripcion: >
-      Diseño y desarrollo tu web a medida —nada de plantillas genéricas— y la construyo
-      con la misma cabeza con la que audito: sé cómo se ataca una web, así que sé qué
-      cerrar antes de que sea un problema. La seguridad no se añade al final como
-      checklist de marketing, está en el diseño desde el primer día.
-    entrega: "web a medida, con las medidas de seguridad aplicadas desde el desarrollo."
+      Un pentest te dice qué puede fallar; esto te asegura que, si algo falla
+      igualmente, no lo pierdes todo. Reviso o implemento una estrategia de copias de
+      seguridad que de verdad puedas restaurar cuando la necesites —no un backup que
+      solo existe sobre el papel.
+    entrega: "sistema de copias de seguridad probado y documentado, con su plan de restauración."
     orientativo: ""
 
 proceso:

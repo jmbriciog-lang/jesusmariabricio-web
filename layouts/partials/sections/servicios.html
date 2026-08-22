@@ -2,20 +2,40 @@
   <div class="section__inner">
     <p class="kicker reveal">Qué hago</p>
     <h2 class="section__title reveal">Servicios</h2>
-    <p class="section__intro reveal">Test de vulnerabilidades, pentesting y hacking ético sobre infraestructuras y páginas web. Con pruebas, no promesas.</p>
 
-    <div class="servicios__grid">
-      {{ range $i, $s := site.Data.site.servicios }}
-      <article class="card reveal" style="transition-delay: {{ mul $i 80 }}ms">
-        {{ partial "icon.html" $s.icono }}
-        <h3 class="card__title">{{ $s.titulo }}</h3>
-        <p class="card__desc">{{ $s.descripcion }}</p>
-        {{ if $s.entrega }}<p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ $s.entrega }}</p>{{ end }}
-        {{ if $s.orientativo }}<p class="card__meta"><span class="card__meta-label">Orientativo:</span> {{ $s.orientativo }}</p>{{ end }}
-      </article>
-      {{ end }}
+    {{ $ciber := site.Data.site.servicios_bloques.ciberseguridad }}
+    <div class="servicios__bloque reveal">
+      <div class="servicios__bloque-head">
+        <span class="servicios__bloque-num">{{ $ciber.numero }}</span>
+        <h3 class="servicios__bloque-title">{{ $ciber.titulo }}</h3>
+      </div>
+      <p class="servicios__bloque-kicker">{{ $ciber.kicker }}</p>
+
+      <div class="servicios__grid">
+        {{ range $i, $s := site.Data.site.servicios_ciberseguridad }}
+        <article class="card reveal{{ if $s.discreto }} card--discreto{{ end }}" style="transition-delay: {{ mul $i 80 }}ms">
+          {{ partial "icon.html" $s.icono }}
+          <h3 class="card__title">{{ $s.titulo }}</h3>
+          <p class="card__desc">{{ $s.descripcion }}</p>
+          {{ if $s.entrega }}<p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ $s.entrega }}</p>{{ end }}
+          {{ if $s.orientativo }}<p class="card__meta"><span class="card__meta-label">Orientativo:</span> {{ $s.orientativo }}</p>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+
+      <p class="section__footnote reveal">Cada proyecto se ajusta a tu caso. Cuéntame qué tienes —hosts, webs, si hay dominio Active Directory, externo o interno— y te preparo una propuesta cerrada y personalizada. Sin plantillas, sin sorpresas.</p>
     </div>
 
-    <p class="section__footnote reveal">Cada proyecto se ajusta a tu caso. Cuéntame qué tienes —hosts, webs, si hay dominio Active Directory, externo o interno— y te preparo una propuesta cerrada y personalizada. Sin plantillas, sin sorpresas.</p>
+    {{ $web := site.Data.site.servicios_bloques.paginas_web }}
+    <div class="servicios__bloque servicios__bloque--web reveal">
+      <div class="servicios__bloque-head">
+        <span class="servicios__bloque-num">{{ $web.numero }}</span>
+        <h3 class="servicios__bloque-title">{{ $web.titulo }}</h3>
+      </div>
+      <div class="servicios__web-copy">
+        {{ range $web.parrafos }}<p>{{ . }}</p>{{ end }}
+        <p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ $web.entrega }}</p>
+      </div>
+    </div>
   </div>
 </section>

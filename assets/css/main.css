@@ -445,6 +445,46 @@ h1, h2, h3, p { margin: 0; }
 /* -------------------------------------------------------------------------
    Servicios
    ------------------------------------------------------------------------- */
+.servicios__bloque {
+  margin-bottom: 4rem;
+}
+.servicios__bloque:last-child {
+  margin-bottom: 0;
+}
+.servicios__bloque-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+.servicios__bloque-num {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.servicios__bloque-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.servicios__bloque-kicker {
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+.servicios__web-copy {
+  max-width: 720px;
+}
+.servicios__web-copy p {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+}
+.servicios__web-copy .card__meta {
+  margin-top: 1.3rem;
+}
 .servicios__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -475,6 +515,20 @@ h1, h2, h3, p { margin: 0; }
 .card__desc { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 1rem; }
 .card__meta { font-size: 0.85rem; color: var(--text-faint); margin-top: 0.4rem; }
 .card__meta-label { color: var(--text-dim); font-family: var(--font-mono); }
+
+.card--discreto {
+  padding: 1.3rem 1.8rem;
+  background: transparent;
+  box-shadow: none;
+}
+.card--discreto .card__icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.7rem;
+  opacity: 0.75;
+}
+.card--discreto .card__title { font-size: 1rem; }
+.card--discreto .card__desc { font-size: 0.88rem; }
 
 /* -------------------------------------------------------------------------
    Cómo trabajo
