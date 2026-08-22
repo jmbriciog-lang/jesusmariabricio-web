@@ -7,7 +7,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
 [outputs]
   home = ["HTML"]
-  page = ["HTML"]
 
 [params]
   description = "Pentester freelance: test de intrusión, análisis de vulnerabilidades y hacking ético. Evidencia técnica para ISO 27001, ENS y NIS2. 100% remoto."

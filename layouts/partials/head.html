@@ -1,21 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ $pageTitle := .Site.Title }}
-{{ $pageDescription := .Site.Params.description }}
-{{ if eq .Kind "page" }}
-  {{ with .Title }}{{ $pageTitle = . }}{{ end }}
-  {{ with .Params.description }}{{ $pageDescription = . }}{{ end }}
-{{ end }}
-<title>{{ $pageTitle }}</title>
-<meta name="description" content="{{ $pageDescription }}">
+<title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
 {{ if eq .Kind "404" }}<meta name="robots" content="noindex, nofollow">{{ else }}<meta name="robots" content="index, follow">{{ end }}
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}">
 
 {{ if .Site.Params.googleSiteVerification }}<meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}">{{ end }}
 
-<meta property="og:title" content="{{ $pageTitle }}">
-<meta property="og:description" content="{{ $pageDescription }}">
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:locale" content="es_ES">
@@ -26,8 +20,8 @@
 <meta property="og:image:alt" content="Jesús María Bricio — Pentester · Seguridad Ofensiva">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $pageTitle }}">
-<meta name="twitter:description" content="{{ $pageDescription }}">
+<meta name="twitter:title" content="{{ .Site.Title }}">
+<meta name="twitter:description" content="{{ .Site.Params.description }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}img/og-banner.png">
 
 <link rel="canonical" href="{{ .Permalink }}">

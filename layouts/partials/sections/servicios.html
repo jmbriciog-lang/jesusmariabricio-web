@@ -12,7 +12,6 @@
         <p class="card__desc">{{ $s.descripcion }}</p>
         {{ if $s.entrega }}<p class="card__meta"><span class="card__meta-label">Entrega:</span> {{ $s.entrega }}</p>{{ end }}
         {{ if $s.orientativo }}<p class="card__meta"><span class="card__meta-label">Orientativo:</span> {{ $s.orientativo }}</p>{{ end }}
-        {{ if $s.enlace }}<a href="{{ $s.enlace }}" class="card__link">Ver más &rarr;</a>{{ end }}
       </article>
       {{ end }}
     </div>

@@ -1,4 +1,3 @@
-{{ if .IsHome }}
 {{ $person := dict
   "@type" "Person"
   "@id" (print .Site.BaseURL "#person")
@@ -74,19 +73,3 @@
 <script type="application/ld+json">
 {{ $root | jsonify (dict "indent" "  ") | safeJS }}
 </script>
-{{ else if eq .Kind "page" }}
-{{ $webpage := dict
-  "@type" "WebPage"
-  "@id" (print .Permalink "#webpage")
-  "url" .Permalink
-  "name" .Title
-  "description" (.Params.description | default .Site.Params.description)
-  "inLanguage" "es-ES"
-  "isPartOf" (dict "@id" (print .Site.BaseURL "#service"))
-  "about" (dict "@id" (print .Site.BaseURL "#service"))
-}}
-{{ $root := dict "@context" "https://schema.org" "@graph" (slice $webpage) }}
-<script type="application/ld+json">
-{{ $root | jsonify (dict "indent" "  ") | safeJS }}
-</script>
-{{ end }}

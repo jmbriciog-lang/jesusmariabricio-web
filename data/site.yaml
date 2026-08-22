@@ -7,7 +7,6 @@ servicios:
       para tu negocio.
     entrega: "informe claro con el plan de corrección, ordenado por lo que más te protege."
     orientativo: ""
-    enlace: "/ciberseguridad/"
   - titulo: "Test de intrusión (pentesting)"
     icono: "exploit"
     descripcion: >
@@ -16,7 +15,6 @@ servicios:
       Directory y aplicaciones web.
     entrega: "informe con la cadena de ataque reproducible y cómo cerrarla."
     orientativo: ""
-    enlace: "/ciberseguridad/"
   - titulo: "Retest de remediación"
     icono: "shield"
     descripcion: >
@@ -24,7 +22,6 @@ servicios:
       El cierre lógico de cualquier auditoría.
     entrega: ""
     orientativo: ""
-    enlace: "/ciberseguridad/"
   - titulo: "Cumplimiento y auditoría — la parte técnica"
     icono: "compliance"
     descripcion: >
@@ -35,7 +32,6 @@ servicios:
       certificación las lleva tu consultor de cumplimiento; yo pongo la prueba técnica.
     entrega: ""
     orientativo: ""
-    enlace: "/ciberseguridad/"
   - titulo: "Diseño y desarrollo de páginas web personalizadas y securizadas"
     icono: "shield"
     descripcion: >
@@ -45,7 +41,6 @@ servicios:
       checklist de marketing, está en el diseño desde el primer día.
     entrega: "web a medida, con las medidas de seguridad aplicadas desde el desarrollo."
     orientativo: ""
-    enlace: "/paginas-web/"
 
 proceso:
   - "Alcance y presupuesto cerrados y personalizados antes de empezar. Pagas por lo acordado; sin sorpresas a mitad de camino."
