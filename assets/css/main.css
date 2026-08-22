@@ -557,6 +557,23 @@ h1, h2, h3, p { margin: 0; }
 .proceso__text { color: var(--text-dim); }
 .proceso__text strong { color: var(--text); font-weight: 600; }
 
+.proceso-divider {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--border);
+}
+.proceso-divider__title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.proceso-divider__intro {
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
 .como-trabajo__estandares { margin-bottom: 1rem; }
 .como-trabajo__estandares-label {
   display: block;

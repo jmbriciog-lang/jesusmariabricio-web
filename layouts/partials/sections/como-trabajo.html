@@ -13,6 +13,20 @@
       {{ end }}
     </ol>
 
+    <div class="proceso-divider reveal">
+      <h3 class="proceso-divider__title">Si el proyecto es una web</h3>
+      <p class="proceso-divider__intro">{{ site.Data.site.proceso_web_intro | markdownify }}</p>
+    </div>
+
+    <ol class="proceso">
+      {{ range $i, $paso := site.Data.site.proceso_web }}
+      <li class="proceso__item reveal" style="transition-delay: {{ mul $i 60 }}ms">
+        <span class="proceso__num">{{ printf "%02d" (add $i 1) }}</span>
+        <span class="proceso__text">{{ $paso | markdownify }}</span>
+      </li>
+      {{ end }}
+    </ol>
+
     <div class="como-trabajo__estandares reveal">
       <span class="como-trabajo__estandares-label">Estándares y marcos</span>
       <ul class="pill-list">

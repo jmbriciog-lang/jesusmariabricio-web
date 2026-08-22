@@ -28,7 +28,7 @@ servicios_bloques:
         cabeza con la que audito: sé cómo se ataca una web, así que sé qué cerrar antes
         de que sea un problema — la seguridad está en el diseño desde el primer día, no
         añadida al final como checklist de marketing.
-    entrega: "web a medida, con estrategia SEO y diseño orientado a conversión, con las medidas de seguridad aplicadas desde el desarrollo. 1.500€, en 1-2 días."
+    entrega: "web a medida, con estrategia SEO y diseño orientado a conversión, con las medidas de seguridad aplicadas desde el desarrollo."
 
 servicios_ciberseguridad:
   - titulo: "Análisis de vulnerabilidades"
@@ -90,6 +90,15 @@ proceso:
   - "Metodología reconocida (PTES, OWASP) y validación manual: solo te reporto lo que es explotable de verdad, con su prueba — no la salida de un escáner."
   - "Cada hallazgo, con su riesgo y su solución, priorizado por lo que de verdad te protege."
   - "Siempre dos lecturas del mismo informe: una ejecutiva para dirección y una técnica para tu equipo."
+
+proceso_web_intro: >
+  Y si lo que necesitas es una web, el proceso es igual de personal: cuéntame qué necesitas y
+
+proceso_web:
+  - "Te muestro hasta 3 propuestas de diseño distintas, para que elijas la que mejor encaja con tu negocio."
+  - "Respeto tu identidad y colores corporativos si ya los tienes, o te propongo unos nuevos si lo que buscamos es renovar tu imagen desde cero."
+  - "La construyo segura desde el primer día —con la misma cabeza con la que audito— para que esté siempre operativa y no se caiga cuando más la necesites."
+  - "La posiciono con SEO real para que aparezcas antes que tu competencia cuando te buscan."
 
 estandares:
   - "PTES"
