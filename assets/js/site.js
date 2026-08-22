@@ -35,7 +35,16 @@
   // --- Scroll-spy -------------------------------------------------------
   const navLinks = Array.from(document.querySelectorAll(".site-nav__links a"));
   const sections = navLinks
-    .map((a) => document.querySelector(a.getAttribute("href")))
+    .map((a) => {
+      const href = a.getAttribute("href") || "";
+      const hashIndex = href.indexOf("#");
+      if (hashIndex === -1) return null;
+      try {
+        return document.querySelector(href.slice(hashIndex));
+      } catch (err) {
+        return null;
+      }
+    })
     .filter(Boolean);
 
   if (sections.length && "IntersectionObserver" in window) {
